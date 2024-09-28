@@ -1,0 +1,28 @@
+[2024-09-25 15:49:42] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /Users/cguasgua/chirper/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:231)
+[stacktrace]
+#0 /Users/cguasgua/chirper/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(138): Illuminate\\Log\\LogManager->resolve(NULL, NULL)
+#1 /Users/cguasgua/chirper/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(125): Illuminate\\Log\\LogManager->get(NULL)
+#2 /Users/cguasgua/chirper/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(700): Illuminate\\Log\\LogManager->driver()
+#3 /Users/cguasgua/chirper/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(378): Illuminate\\Log\\LogManager->error('voku\\\\helper\\\\ASC...', Array)
+#4 /Users/cguasgua/chirper/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(341): Illuminate\\Foundation\\Exceptions\\Handler->reportThrowable(Object(TypeError))
+#5 /Users/cguasgua/chirper/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(620): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(TypeError))
+#6 /Users/cguasgua/chirper/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->reportException(Object(TypeError))
+#7 /Users/cguasgua/chirper/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1203): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 /Users/cguasgua/chirper/artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#9 {main}
+"} 
+[2024-09-25 15:49:42] laravel.ERROR: voku\helper\ASCII::to_ascii(): Argument #2 ($replace) must be of type array, string given, called in /Users/cguasgua/chirper/vendor/laravel/framework/src/Illuminate/Support/Str.php on line 122 {"exception":"[object] (TypeError(code: 0): voku\\helper\\ASCII::to_ascii(): Argument #2 ($replace) must be of type array, string given, called in /Users/cguasgua/chirper/vendor/laravel/framework/src/Illuminate/Support/Str.php on line 122 at /Users/cguasgua/chirper/vendor/voku/portable-ascii/src/voku/helper/ASCII.php:797)
+[stacktrace]
+#0 /Users/cguasgua/chirper/vendor/laravel/framework/src/Illuminate/Support/Str.php(122): voku\\helper\\ASCII::to_ascii('Laravel', 'en')
+#1 /Users/cguasgua/chirper/vendor/laravel/framework/src/Illuminate/Support/Str.php(1443): Illuminate\\Support\\Str::ascii('Laravel', 'en')
+#2 /Users/cguasgua/chirper/vendor/laravel/framework/config/database.php(150): Illuminate\\Support\\Str::slug('Laravel', '_')
+#3 /Users/cguasgua/chirper/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(190): require('/Users/cguasgua...')
+#4 /Users/cguasgua/chirper/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(69): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->getBaseConfiguration()
+#5 /Users/cguasgua/chirper/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(38): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#6 /Users/cguasgua/chirper/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(316): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#7 /Users/cguasgua/chirper/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(473): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#8 /Users/cguasgua/chirper/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(195): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 /Users/cguasgua/chirper/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1203): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 /Users/cguasgua/chirper/artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#11 {main}
+"} 
